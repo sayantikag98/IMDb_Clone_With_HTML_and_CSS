@@ -1,0 +1,210 @@
+body{
+    background-color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
+}
+
+header{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: max-content;
+}
+
+
+/* first child div of header element */
+
+header>div:nth-child(1){
+    background-color:#f2d830;
+    font-weight:800;
+    width: min-content;
+    padding: 2px 6px;
+    border-radius: 5px;
+    font-size: 25px;
+    height: max-content;
+}
+
+header>div>a{
+    text-decoration: none;
+    color: black;
+}
+
+/* second child div of header element */
+
+header>div:nth-child(2){
+    display: flex;
+    align-items: center;
+    width: max-content;
+    padding: 10px 15px;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+}
+
+/* first span child of div element of header */
+
+header>div:nth-child(2)>span:first-child{
+    color:  rgba(255, 255, 255, 0.3);
+    transform: scale(1.2, 0.8);
+    padding-right: 15px;
+    width: 20px;
+}
+
+/* last span child of div element of header */
+header>div:nth-child(2)>span:last-child{
+    font-size: 15px;
+}
+
+
+
+header>div:nth-child(2):hover{
+    background-color: rgb(43, 38, 38);
+    color: white;
+    /* LEFT = make the color of the icon beside menu white on hover */
+}
+
+/* third div of the header element */
+
+header>div:nth-child(3){
+    color: white;
+    display: flex;
+    width: 60%;
+    align-items: center;
+    font-size: 15px;
+}
+
+header>div:nth-child(3)>ul{
+    padding-left: 0;
+}
+
+header>div:nth-child(3)>ul>li {
+    list-style: none;
+    background-color: white;
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: max-content;
+    padding: 5px 5px;
+    border-top-left-radius: 5px; 
+    border-bottom-left-radius: 5px;  
+    border: 3px solid rgb(248, 197, 102);
+    border-right: 1px solid gray;
+}
+
+header>div:nth-child(3)>ul>li:hover{
+    background-color: rgb(245, 237, 237);
+}
+
+header>div:nth-child(3)>ul>li>span:last-child{
+    display: none;
+}
+
+header>div:nth-child(3)>ul>ul {
+    list-style: none;
+    display: none;
+}
+
+input[type="checkbox"]{
+    display: none;
+}
+
+header>div:nth-child(3)>ul>li:hover{
+    cursor: pointer;
+}
+
+header>div:nth-child(3)>ul>li:hover + ul{
+    display: flex;
+    position: absolute;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px;
+    background-color: rgb(34, 33, 33);
+    margin-top: 4px;
+    border-radius: 3px;
+}
+
+header>div:nth-child(3)>ul>ul>li{
+    padding: 10px;
+    display: flex;
+    align-items: center;
+}
+
+header>div:nth-child(3)>ul>ul>li:hover{
+    background-color: gray;
+}
+
+header>div:nth-child(3)>ul>ul>li span:nth-child(2){
+    padding: 0 10px;
+}
+
+header>div:nth-child(3)>ul>ul>li>a{
+    color: white;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    border-top: 1.5px solid rgb(90, 89, 89);
+    padding-top: 20px;
+}
+
+header>div:nth-child(3)>input{
+    padding: 8.5px;
+    font-weight: 400;
+    width: 100%;
+    height: max-content;
+    font-size: 15px;
+    border-bottom-right-radius: 5px;
+    border-top-right-radius: 5px;
+    border: 3px solid rgb(248, 197, 102);
+    border-left: 0;
+    padding-right: 35px;
+    outline: none;
+}
+
+header>div:nth-child(3)>span{
+    position: absolute;
+    left: 74%;
+    color: gray;
+}
+
+header>div:nth-child(4){
+    color: white;
+    font-weight: 800;
+    letter-spacing: -1px;
+}
+
+header>div:nth-child(5){
+    display: flex;
+    border-left: 2px solid gray;
+    color: white;
+    width: 15%;
+    align-items: center;
+}
+
+header>div:nth-child(5)>div{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+    padding-left: 20px;
+}
+
+header>div:nth-child(5)>div>span:first-child{
+    padding-right: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
