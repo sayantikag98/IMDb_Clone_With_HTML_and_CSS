@@ -2,6 +2,7 @@ body{
     background-color: black;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: 700;
+    overflow-x: hidden;
 }
 
 header{
@@ -86,7 +87,7 @@ header>div:nth-child(3)>ul>li {
     align-items: center;
     justify-content: center;
     width: max-content;
-    padding: 5px 5px;
+    padding: 5.5px 5px;
     border-top-left-radius: 5px; 
     border-bottom-left-radius: 5px;  
     border: 3px solid rgb(248, 197, 102);
@@ -153,7 +154,7 @@ header>div:nth-child(3)>ul>ul>li>a{
 }
 
 header>div:nth-child(3)>input{
-    padding: 8.5px;
+    padding: 8.4px;
     font-weight: 400;
     width: 100%;
     height: max-content;
@@ -292,7 +293,7 @@ main>div:first-child>div{
     font-size: 10px;
     font-weight: 50px;
 }
-
+/* 
 main>div:nth-child(2){
     display: flex;
     margin-top: 10px;
@@ -330,7 +331,7 @@ main>div:nth-child(2)>div:nth-child(1)>img:last-child{
     position: absolute;
     width: 140px;
     border-radius: 5px;
-}
+} */
 
 
 main>div:nth-last-child(3){
@@ -348,38 +349,101 @@ main>div:nth-last-child(3)>div:first-child{
     margin-bottom: 20px;
 }
 
+main>div:nth-last-child(3)>div:nth-child(2){
+    position: relative;
+}
+
+main>div:nth-last-child(3)>div:nth-child(2)>div:first-child>button{
+    background-color: rgba(255, 255, 255, 0.055);
+    border: 3px solid white;
+    height: fit-content;
+    display: flex;
+    align-items: center;  
+    border-radius: 20px; 
+    position: absolute;
+    top: 50px;   
+    font-size: 50px;
+    color: white;
+    z-index: 1;
+}
+
+
+
+main>div:nth-last-child(3)>div:nth-child(2)>div:first-child>button:nth-child(2){
+    right: 20px;
+    
+}
+
+main>div:nth-last-child(3)>div:nth-child(2)>div:first-child>button:hover{
+    background-color: rgba(128, 128, 128, 0.5);
+}
+
+main>div:nth-last-child(3)>div:nth-child(2)>div:first-child>button>a, 
+main>div:nth-last-child(3)>div:nth-child(2)>div:first-child>button>a:visited
+{
+    color: white;
+    text-decoration: none;
+}
+
+
+
+
+
 main>div:nth-last-child(3)>div:first-child>h2{
     padding: 2px 10px;
     margin: 0 10px;
 }
 
-main>div:nth-last-child(3)>div:nth-child(2){
+main>div:nth-last-child(3)>div:nth-child(2)>div:nth-child(1)>div{
     display: flex;
     color: white;
+    transition: transform 3s ease-in 10ms;
+    overflow-x: visible;
+   
 }
 
-main>div:nth-last-child(3)>div:nth-child(2)>div{
+
+#top-news-div-next:target{
+    transform: translate(-930px, 0);
+    overflow-x: visible;
+}
+
+.top-news-div-prev:target{
+    transform: translate(930px, 0);
+    overflow-x: visible;
+}
+
+/* 930px */
+
+
+
+
+
+
+main>div:nth-last-child(3)>div:nth-child(2)>div:nth-child(1)>div>div{
     flex: 1 1 0;
+   
 }
 
-main>div:nth-last-child(3)>div:nth-child(2)>div>a{
+main>div:nth-last-child(3)>div:nth-child(2)>div:nth-child(1)>div>div>a{
     display: flex;
     color: white;
     text-decoration: none;
     margin: 10px;
     font-weight: 400px;
+    width: 450px;
 }
 
-main>div:nth-last-child(3)>div:nth-child(2)>div>a>img{
+main>div:nth-last-child(3)>div:nth-child(2)>div:nth-child(1)>div>div>a>img{
     margin-right: 20px;
     height: 100%;
 }
 
-main>div:nth-last-child(3)>div:nth-child(2)>div>a>div>h3{
+main>div:nth-last-child(3)>div:nth-child(2)>div:nth-child(1)>div>div>a>div>h3{
     font-size: 18px;
 }
 
-main>div:nth-last-child(3)>div:nth-child(2)>div>a>div>p{
+main>div:nth-last-child(3)>div:nth-child(2)>div:nth-child(1)>div>div>a>div>p{
     font-size: 13px;
 }
 
@@ -397,18 +461,6 @@ main>div:nth-last-child(3)>div:last-child>div{
     padding: 8px;
     margin: 10px;
     border-radius: 20px;
-}
-
-
-
-
-
-
-
-main>div:nth-last-child(3)>div:nth-child(2)>div:nth-last-child(1), 
-main>div:nth-last-child(3)>div:nth-child(2)>div:nth-last-child(2)
-{
-    display: none;
 }
 
 
