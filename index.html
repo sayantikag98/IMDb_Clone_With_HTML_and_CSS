@@ -27,17 +27,15 @@
         </div>
         <div>
             <ul>
-                <li>
+                <!-- checkbox logic to display the menu when it is checked otherwise hide it -->
+                <label for = "menu">
                     <span>All</span>
                     <span class="material-icons-round">
                         arrow_drop_down
-                    </span>
-                    <span class="material-icons-round">
-                        arrow_drop_up
-                    </span>
-                </li>
-                <!-- <input type="checkbox" checked=true/>     -->
-                    <ul>
+                    </span>   
+                </label>
+                <input id = "menu" type = "checkbox">
+                    <ul id = "menu-option">
                         <li>
                             <span class="material-icons">
                                 search
@@ -140,39 +138,246 @@
             </a>
             <div>SPONSORED</div>
         </div>
-        <!-- <div>
+
+        <!-- Born today -->
+
+        <div>
             <div>
-                <span class="material-icons">
-                    navigate_before
-                </span>
-                <img src = "/images/jurassic-world-dominion.jpg">
+                <h2>Born today</h2>
                 <span class="material-icons">
                     navigate_next
                 </span>
-                <img src = "/images/jurassic-world-dominion-1.jpg">
-
             </div>
             <div>
-                <div>
-                    Up Next
-                </div>
-                <div>
+                <h3>
+                    People born on November 29
+                </h3>
+            </div>
+            
+            <div>
+                <input type = "radio" class = "carousel-open" id = "carousel-1" name="carousel" aria-hidden="true" hidden="" checked = "checked">
+                <div class = "carousel-item">
+                    <a href="https://www.imdb.com/name/nm2110418?ref_=hm_brn_1">
+                        <img src="https://m.media-amazon.com/images/M/MV5BYTI3ZDEwYjktZjVhYS00NTlhLTkwOWEtNjM1MzEyMWU5M2QyXkEyXkFqcGdeQXVyMTE3ODY2Nzk@._V1_QL75_UX140_CR0,8,140,140_.jpg" alt="Gemma Chan">
+                        <h3>Gemma Chan</h3>
+                        <p>39</p>
+                    </a>
+                    <a href="https://www.imdb.com/name/nm1232470?ref_=hm_brn_2">
+                        <img src="https://m.media-amazon.com/images/M/MV5BZTgxZDVlNWMtN2Y4MS00ZjY0LWI2NjAtYzNmYTcyMTk5YWQ4XkEyXkFqcGdeQXVyMDUxNjM5Mw@@._V1_QL75_UX140_CR0,0,140,140_.jpg" alt="Janina Gavankar">
+                        <h3>Janina Gavankar</h3>
+                        <p>41</p>
+                    </a>
+                    <a href="https://www.imdb.com/name/nm0267506?ref_=hm_brn_3">
+                        <img src="https://m.media-amazon.com/images/M/MV5BMjA5MTY5NjMyMF5BMl5BanBnXkFtZTcwNjM0NTI4Mw@@._V1_QL75_UX140_CR0,0,140,140_.jpg" alt="Anna Faris">
+                        <h3>Anna Faris</h3>
+                        <p>45</p>
+                    </a> 
+                    <a href="https://www.imdb.com/name/nm0314514?ref_=hm_brn_4">
+                        <img src="https://m.media-amazon.com/images/M/MV5BMTUzNjY0NTA0Ml5BMl5BanBnXkFtZTgwMTUxMTMyNjE@._V1_QL75_UX140_CR0,6,140,140_.jpg" alt="Lauren German">
+                        <h3>Lauren German</h3>
+                        <p>43</p>
+                    </a>
+                    <a href="https://www.imdb.com/name/nm1569276?ref_=hm_brn_5">
+                        <img src="https://m.media-amazon.com/images/M/MV5BMTk2OTY5MzcwMV5BMl5BanBnXkFtZTgwODM4MDI5MjI@._V1_QL75_UX140_CR0,12,140,140_.jpg" alt="Chadwick Boseman">
+                        <h3>Chadwick Boseman</h3>
+                        <p>1976-2020</p>
+                    </a>
+                    <a href="https://www.imdb.com/name/nm0001054?ref_=hm_brn_6">
+                        <img src="https://m.media-amazon.com/images/M/MV5BMTg3MjgwMzUzOF5BMl5BanBnXkFtZTcwODM5Nzk4MQ@@._V1_QL75_UX140_CR0,13,140,140_.jpg" alt="Joel Coen">
+                        <h3>Joel Coen</h3>
+                        <p>67</p>
+                    </a>
 
                 </div>
-                <div>
-
+                <input type = "radio" class = "carousel-open" id = "carousel-2" name="carousel"  aria-hidden="true" hidden="">
+                <div class = "carousel-item">
+                    <a href="https://www.imdb.com/name/nm5735148?ref_=hm_brn_7">
+                        <img src="https://m.media-amazon.com/images/M/MV5BMDE1YjE1ZTMtYjgwNS00ODQyLWIzNDctZGE4NDllMDMyOGFiL2ltYWdlXkEyXkFqcGdeQXVyNTgwNDU1NjY@._V1_QL75_UX140_CR0,0,140,140_.jpg" alt="Liv Hewson">
+                        <h3>Liv Hewson</h3>
+                        <p>26</p>
+                    </a> 
+                    <a href="https://www.imdb.com/name/nm0085407?ref_=hm_brn_8">
+                        <img src="https://m.media-amazon.com/images/M/MV5BNTAzNjEyMTkxN15BMl5BanBnXkFtZTcwMzc3NTc4Nw@@._V1_QL75_UX140_CR0,3,140,140_.jpg" alt="Lucas Black">
+                        <h3>Lucas Black</h3>
+                        <p>39</p>
+                    </a>
+                    <a href="https://www.imdb.com/name/nm4053303?ref_=hm_brn_9">
+                        <img src="https://m.media-amazon.com/images/M/MV5BNzUzNjI1ODYtNjZmZS00Njk5LTkwNWUtMDQxODdlYWNhNGU0XkEyXkFqcGdeQXVyMzg2NzYxNDE@._V1_QL75_UX140_CR0,9,140,140_.jpg" alt="Briana Cuoco">
+                        <h3>Briana Cuoco</h3>
+                        <p>33</p>
+                    </a>
+                    <a href="https://www.imdb.com/name/nm1580911?ref_=hm_brn_10">
+                        <img src="https://m.media-amazon.com/images/M/MV5BMjAwMzE2OTUyNV5BMl5BanBnXkFtZTYwMjQzMjgy._V1_QL75_UX140_CR0,0,140,140_.jpg" alt="Brian Baumgartner">
+                        <h3>Brian Baumgartner</h3>
+                        <p>49</p>
+                    </a>
+                    <a href="https://www.imdb.com/name/nm0000530?ref_=hm_brn_11">
+                        <img src="https://m.media-amazon.com/images/M/MV5BMjE5NzU0MzY0N15BMl5BanBnXkFtZTgwOTE2MDkzODE@._V1_QL75_UX140_CR0,14,140,140_.jpg" alt="Andrew McCarthy">
+                        <h3>Andrew McCarthy</h3>
+                        <p>59</p>
+                    </a>
+                    <a href="https://www.imdb.com/name/nm1404824?ref_=hm_brn_12">
+                        <img src="https://m.media-amazon.com/images/M/MV5BYjZjZWIzNjktYmYxMy00YzE4LThlZGItZTI2MTNmMjY1ODQzXkEyXkFqcGdeQXVyMjIxMTM5NDk@._V1_QL75_UY140_CR15,0,140,140_.jpg" alt="Laura Marano">
+                        <h3>Laura Marano</h3>
+                        <p>26</p>
+                    </a>
+                     
                 </div>
-                <div>
-
+                <input type = "radio" class = "carousel-open" id = "carousel-3"  name="carousel" aria-hidden="true" hidden="">
+                <div class = "carousel-item">
+                    <a href="https://www.imdb.com/name/nm0000332?ref_=hm_brn_13">
+                        <img src="https://m.media-amazon.com/images/M/MV5BNDMxNDM3MzY5N15BMl5BanBnXkFtZTcwMjkzOTY4MQ@@._V1_QL75_UX140_CR0,0,140,140_.jpg" alt="Don Cheadle">
+                        <h3>Don Cheadle</h3>
+                        <p>57</p>
+                    </a>
+                    <a href="https://www.imdb.com/name/nm1696098?ref_=hm_brn_14">
+                        <img src="https://m.media-amazon.com/images/M/MV5BMTkyNjQ1NzQ3OV5BMl5BanBnXkFtZTgwMDQ0ODM0OTE@._V1_QL75_UX140_CR0,12,140,140_.jpg" alt="Dany Garcia">
+                        <h3>Dany Garcia</h3>
+                        <p>53</p>
+                    </a>
+                    <a href="https://www.imdb.com/name/nm0002663?ref_=hm_brn_15">
+                        <img src="https://m.media-amazon.com/images/M/MV5BMzMzMTM2NTQ4NF5BMl5BanBnXkFtZTcwODQ1OTkxMw@@._V1_QL75_UX140_CR0,0,140,140_.jpg" alt="Diane Ladd">
+                        <h3>Diane Ladd</h3>
+                        <p>86</p>
+                    </a>
+                    <a href="https://www.imdb.com/name/nm0001550?ref_=hm_brn_16">
+                        <img src="https://m.media-amazon.com/images/M/MV5BMTAzOTc1NjU4MjFeQTJeQWpwZ15BbWU2MDc3NjgzMw@@._V1_QL75_UX140_CR0,12,140,140_.jpg" alt="Cathy Moriarty">
+                        <h3>Cathy Moriarty</h3>
+                        <p>61</p>
+                    </a> 
+                    <a href="https://www.imdb.com/name/nm0001194?ref_=hm_brn_17">
+                        <img src="https://m.media-amazon.com/images/M/MV5BMzBkOTY2YmYtMWM3YS00OGUwLTlmZTgtNzM2ZDc2MDgzNDdlXkEyXkFqcGdeQXVyOTY2NzAzMTk@._V1_QL75_UX140_CR0,3,140,140_.jpg" alt="Jeff Fahey">
+                        <h3>Jeff Fahey</h3>
+                        <p>69</p>
+                    </a>
+                    <a href="https://www.imdb.com/name/nm0185078?ref_=hm_brn_18">
+                        <img src="https://m.media-amazon.com/images/M/MV5BMTY2MzczODc0OV5BMl5BanBnXkFtZTYwOTY1NTQz._V1_QL75_UX140_CR0,7,140,140_.jpg" alt="Jennifer Elise Cox">
+                        <h3>Jennifer Elise Cox</h3>
+                        <p>52</p>
+                    </a>
+                    
                 </div>
-                <div>
-                    <span>Browse trailers</span> 
+                <input type = "radio" class = "carousel-open" id = "carousel-4"  name="carousel" aria-hidden="true" hidden="">
+                <div class = "carousel-item">
+                    <a href="https://www.imdb.com/name/nm0001126?ref_=hm_brn_19">
+                        <img src="https://m.media-amazon.com/images/M/MV5BMTU4Mjk3MzEyOV5BMl5BanBnXkFtZTYwMTU5MDc2._V1_QL75_UX140_CR0,1,140,140_.jpg" alt="Kim Delaney">
+                        <h3>Kim Delaney</h3>
+                        <p>60</p>
+                    </a>
+                    <a href="https://www.imdb.com/name/nm1546300?ref_=hm_brn_20">
+                        <img src="https://m.media-amazon.com/images/M/MV5BM2U4MzM0MjktY2JkZi00OTliLThmNzUtYmFkNDVkMTJlMjhhXkEyXkFqcGdeQXVyMjA1NDEwNTI@._V1_QL75_UX140_CR0,0,140,140_.jpg" alt="Diego Boneta">
+                        <h3>Diego Boneta</h3>
+                        <p>31</p>
+                    </a>
+                    <a href="https://www.imdb.com/name/nm1099188?ref_=hm_brn_21">
+                        <img src="https://m.media-amazon.com/images/M/MV5BMzI5MWNjNDgtODIyZi00N2U3LTk1NDYtYzAzM2U0ZmJlMDZkXkEyXkFqcGdeQXVyMTA1ODE1MDgw._V1_QL75_UY140_CR23,0,140,140_.jpg" alt="Julian Ovenden">
+                        <h3>Julian Ovenden</h3>
+                        <p>45</p>
+                    </a>
+                    <a href="https://www.imdb.com/name/nm0752539?ref_=hm_brn_22">
+                        <img src="https://m.media-amazon.com/images/M/MV5BMTQ0MTU0NTUwOV5BMl5BanBnXkFtZTcwNzE1MTE3OA@@._V1_QL75_UX140_CR0,7,140,140_.jpg" alt="Fran Ryan">
+                        <h3>Fran Ryan</h3>
+                        <p>1916-2000</p>
+                    </a>
+                    <a href="https://www.imdb.com/name/nm0005177?ref_=hm_brn_23">
+                        <img src="https://m.media-amazon.com/images/M/MV5BMTYzMDM5ODU4M15BMl5BanBnXkFtZTcwODQ5NjQ4NA@@._V1_QL75_UX140_CR0,12,140,140_.jpg" alt="Howie Mandel">
+                        <h3>Howie Mandel</h3>
+                        <p>66</p>
+                    </a>
+                    <a href="https://www.imdb.com/name/nm0727778?ref_=hm_brn_24">
+                        <img src="https://m.media-amazon.com/images/M/MV5BMTM1MDg0MzcwN15BMl5BanBnXkFtZTcwOTExOTYxOA@@._V1_QL75_UY140_CR24,0,140,140_.jpg" alt="David Rintoul">
+                        <h3>David Rintoul</h3>
+                        <p>73</p>
+                    </a> 
+                    
+                </div>
+                <input type = "radio" class = "carousel-open" id = "carousel-5" name="carousel"  aria-hidden="true" hidden="">
+                <div class = "carousel-item">
+                    <a href="https://www.imdb.com/name/nm0388931?ref_=hm_brn_25">
+                        <img src="https://m.media-amazon.com/images/M/MV5BMjAwODA0OTkwMl5BMl5BanBnXkFtZTcwMjU5MDExOA@@._V1_QL75_UX140_CR0,0,140,140_.jpg" alt="Jackie Hoffman">
+                        <h3>Jackie Hoffman</h3>
+                        <p>61</p>
+                    </a>
+                    <a href="https://www.imdb.com/name/nm0788009?ref_=hm_brn_26">
+                        <img src="https://m.media-amazon.com/images/M/MV5BODkzMzAxMDMzOV5BMl5BanBnXkFtZTgwNzE2NDM0ODE@._V1_QL75_UY140_CR29,0,140,140_.jpg" alt="Garry Shandling">
+                        <h3>Garry Shandling</h3>
+                        <p>1949-2016</p>
+                    </a>
+                    <a href="https://www.imdb.com/name/nm0132660?ref_=hm_brn_27">
+                        <img src="https://m.media-amazon.com/images/M/MV5BNmEyNmJlNmQtYjgzZC00NDc2LWFmZDctNWUxZDJjZGNiOWEzXkEyXkFqcGdeQXVyMjQwMDg0Ng@@._V1_QL75_UX140_CR0,12,140,140_.jpg" alt="Larry Joe Campbell">
+                        <h3>Larry Joe Campbell</h3>
+                        <p>51</p>
+                    </a>
+                    <a href="https://www.imdb.com/name/nm0605283?ref_=hm_brn_28">
+                        <img src="https://m.media-amazon.com/images/M/MV5BNTIxNzc1MzA3Nl5BMl5BanBnXkFtZTgwMDY0MTc3NjE@._V1_QL75_UX140_CR0,28,140,140_.jpg" alt="Naoko Mori">
+                        <h3>Naoko Mori</h3>
+                        <p>50</p>
+                    </a>
+                    <a href="https://www.imdb.com/name/nm0742389?ref_=hm_brn_29">
+                        <img src="https://m.media-amazon.com/images/M/MV5BN2U2MGQwOTItMTBlNS00NTllLWE4ZTktN2NiMWQwOTdhM2U0XkEyXkFqcGdeQXVyMzAxNzE4Mw@@._V1_QL75_UX140_CR0,0,140,140_.jpg" alt="Beatrice Rosen">
+                        <h3>Beatrice Rosen</h3>
+                        <p>44</p>
+                    </a>
+                    <a href="https://www.imdb.com/name/nm0005274?ref_=hm_brn_30">
+                        <img src="https://m.media-amazon.com/images/M/MV5BMTMxMTk0NTczN15BMl5BanBnXkFtZTcwNDI3NzQ3Mg@@._V1_QL75_UX140_CR0,14,140,140_.jpg" alt="Gena Lee Nolin">
+                        <h3>Gena Lee Nolin</h3>
+                        <p>50</p>
+                    </a>
+                </div>
+
+                <!-- for the first carousel the next is carousel 2  -->
+                <label for="carousel-2" class="carousel-control next control-1">
                     <span class="material-icons">
                         navigate_next
                     </span>
-                </div>
+                </label> 
+
+                <!-- for the second carousel the next is carousel 3 and the previous is carousel 1  -->
+                <label for="carousel-1" class="carousel-control prev control-2">
+                    <span class="material-icons">
+                        navigate_before
+                    </span>
+                </label>
+                <label for="carousel-3" class="carousel-control next control-2">
+                    <span class="material-icons">
+                        navigate_next
+                    </span>
+                </label>
+
+                <!-- for the third carousel the next is carousel 4 and the previous is carousel 2  -->
+                <label for="carousel-2" class="carousel-control prev control-3">
+                    <span class="material-icons">
+                        navigate_before
+                    </span>
+                </label>
+                <label for="carousel-4" class="carousel-control next control-3">
+                    <span class="material-icons">
+                        navigate_next
+                    </span>
+                </label>
+
+                <!-- for the fourth carousel the next is carousel 5 and the previous is carousel 3  -->
+                <label for="carousel-3" class="carousel-control prev control-4">
+                    <span class="material-icons">
+                        navigate_before
+                    </span>
+                </label>
+                <label for="carousel-5" class="carousel-control next control-4">
+                    <span class="material-icons">
+                        navigate_next
+                    </span>
+                </label>
+
+                <!-- for the fifth carousel the previous is carousel 4  -->
+                <label for="carousel-4" class="carousel-control prev control-5">
+                    <span class="material-icons">
+                        navigate_before
+                    </span>
+                </label>
+               
+               
             </div>
-        </div> -->
+        </div>
 
 
 
@@ -191,7 +396,7 @@
                         <a href="#top-news-div-next.top-news-div-prev">navigate_before</a>  
                     </button>
                     <button type="button" class="material-icons">
-                        <a href="#top-news-div-next">navigate_next</a> 
+                        <a href="#top-news-div-next" onclick="e=>{preventDefault(e)}">navigate_next</a> 
                     </button>
                 
                     <div id = "top-news-div-next" class = "top-news-div-prev">
