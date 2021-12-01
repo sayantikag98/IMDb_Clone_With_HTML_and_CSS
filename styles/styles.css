@@ -498,6 +498,10 @@ main>div:nth-child(7)>div:nth-child(3)>label
     display: none;
 }
 
+main>div:nth-child(7)>div:nth-child(3)>label{
+    transform: translateY(150px);
+}
+
 main>div:nth-last-child(4)>div:nth-child(3)>label>span,
 main>div:nth-last-child(3)>div:nth-child(2)>label>span,
 main>div:nth-last-child(5)>div:nth-child(2)>label>span,
@@ -614,14 +618,21 @@ main>div:nth-child(7)>div:nth-child(3)>div>a>img+div>div{
 
 main>div:nth-child(7)>div:nth-child(3)>div>a>img+div>span{
     font-size: 20px;
+    color:rgb(102, 102, 228);
+    z-index: 100;
+    background-color: rgb(43, 38, 38);
+    padding: 8px 10px;
+    border-radius: 5px;
+    margin-left: 10px;
 }
 
 
 
 main>div:nth-child(7)>div:nth-child(3)>div>a>img+div>div>span:first-child{
-color: yellow;
-margin-right: 5px;
-font-size: 20px;
+    color: yellow;
+    margin-right: 5px;
+    font-size: 20px;
+    padding-left: 15px;
 }
 
 main>div:nth-child(7)>div:nth-child(3)>div>a>img+div>div>h3{
